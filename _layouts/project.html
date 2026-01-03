@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="project-page">
+  <header class="project-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.image %}
+      <img src="{{ page.image }}" alt="{{ page.title }}" class="project-feature-image">
+    {% endif %}
+  </header>
+
+  <div class="project-meta">
+    {% if page.tags %}
+      <div class="project-tags">
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+    {% if page.link %}
+      <a href="{{ page.link }}" class="project-link" target="_blank">View Project →</a>
+    {% endif %}
+  </div>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  <a href="{{ site.baseurl }}/" class="back-link">← Back to Projects</a>
+</article>
+```
