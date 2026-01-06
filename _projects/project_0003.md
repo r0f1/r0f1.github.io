@@ -1,8 +1,8 @@
 ---
-title: Sechseläuten
-image: /dist/project_0003/boegg.svg
-description: Is there a relationship between how fast a snowman figure burns and how good the following summer is?
-tags: [scatterplot]
+title: American Sentiment
+image: /dist/project_0003/american_sentiment.svg
+description: Survey about importance of topics.
+tags: [barchart, likert scale, survey]
 ---
  
 Code: [https://github.com/r0f1/r_visualizations/tree/main/projects/project_0003](https://github.com/r0f1/r_visualizations/tree/main/projects/project_0003)

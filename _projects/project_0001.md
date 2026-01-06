@@ -1,7 +1,7 @@
 ---
 title: Barchart
-image: /dist/project_0001/developer_age.svg
-description: A simple barchart.
+image: /dist/project_0001/sciency_barchart.svg
+description: A sciency barchart.
 tags: [barchart, survey]
 ---
 
