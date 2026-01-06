@@ -5,7 +5,7 @@ layout: default
 <div class="projects-container">
   <!-- Tag Filter Sidebar -->
   <aside class="tag-sidebar">
-    <h3>Filter by Tag</h3>
+    <h3>Categories</h3>
     <div class="tag-filters">
       <button class="tag-filter active" data-tag="all">All Projects</button>
       {% assign all_tags = site.projects | map: "tags" | join: ',' | split: ',' | uniq | sort %}

@@ -5,10 +5,77 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   color: #333;
-  background: #f5f5f5;
+  background: #f7f7f7;
+  padding: 1.5rem;
+}
+
+/* Header and top navigation */
+header.site-header {
+  background: transparent;
+  border-bottom: none;
+  padding: 0.4rem 0;
+} 
+
+header.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-brand .site-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.site-brand .site-title a {
+  color: #111;
+  text-decoration: none;
+}
+
+.site-brand .site-tagline {
+  margin: 0.15rem 0 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.site-nav a {
+  color: #6b7280;
+  text-decoration: none;
+  padding: 0.15rem 0.25rem;
+  border-radius: 4px;
+  font-size: 0.92rem;
+  transition: color 0.12s ease;
+}
+
+.site-nav a:hover {
+  color: #111;
+  text-decoration: underline;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .site-nav {
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+  header.site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 .container {
@@ -18,9 +85,10 @@ body {
 }
 
 .site-header {
-  background: white;
-  padding: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: transparent;
+  padding: 0.6rem 0;
+  box-shadow: none;
+  border-bottom: none;
 }
 
 .site-title a {
@@ -29,18 +97,24 @@ body {
 }
 
 .site-nav {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .site-nav a {
-  margin-right: 1.5rem;
-  color: #666;
+  margin-right: 1rem;
+  color: #6b7280; /* muted gray */
   text-decoration: none;
+  padding: 0.15rem 0.25rem;
+  border-radius: 4px;
+  font-size: 0.92rem;
+  transition: color 0.12s ease;
 }
 
 .site-nav a:hover {
-  color: #333;
-}
+  color: #111;
+  text-decoration: underline;
+  background: transparent;
+} 
 
 .site-content {
   min-height: calc(100vh - 200px);
@@ -181,6 +255,10 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
   .projects-container {
     flex-direction: column;
     padding: 1rem;
@@ -211,16 +289,19 @@ body {
 }
 
 .site-footer {
-  background: #333;
-  color: white;
-  padding: 2rem 0;
+  background: transparent;
+  color: #6b7280; /* muted text */
+  padding: 1.25rem 0;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  border-top: 1px solid #eee;
+  font-size: 0.75rem;
 }
 
 .site-footer a {
-  color: white;
-  margin: 0 1rem;
+  color: #0366d6;
+  margin: 0 0.5rem;
+  text-decoration: none;
 }
 
 /* Project page styles */
