@@ -1,5 +1,5 @@
 ---
-title: Stack Overflow Questions
+title: Line Chart
 image: /dist/project_0010/stackoverflow_questions.svg
 description: How many questions are asked each month on Stack Overflow?
 tags: [time series, line chart]

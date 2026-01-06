@@ -1,7 +1,7 @@
 ---
-title: Survial plot
+title: Survival plot
 image: /dist/project_0009/survival_kaplan_meier.svg
-description: Survial of lung cancer patients.
+description: Survival of lung cancer patients.
 tags: [survival plot, kaplan-meier plot]
 ---
  
