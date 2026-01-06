@@ -303,6 +303,39 @@ header.site-header .container {
   text-decoration: none;
 }
 
+/* Social icons used in footer and about page */
+.social-icons {
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.social-icon svg {
+  width: 16px;
+  height: 16px;
+  color: inherit;
+  fill: currentColor;
+  vertical-align: middle;
+  transition: color 0.12s ease;
+}
+
+.social-icon {
+  color: #6b7280; /* muted */
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #111;
+}
+
+.project-links .social-icon {
+  margin-right: 0.6rem;
+}
+
+
 /* Project page styles */
 .project-page {
   max-width: 800px;
