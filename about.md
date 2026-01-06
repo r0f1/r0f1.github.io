@@ -3,12 +3,14 @@ layout: default
 title: About
 permalink: /about/
 ---
+<article class="project-page">
 
-## About
+  <header class="project-header">
+  <h1>About</h1>
+  </header>
 
-This site is a personal portfolio of projects and experiments. I use this space to showcase projects, write short notes, and link to demos and reports.
+  <p>My name is Florian Rohrer.</p>
+  <p>&nbsp;</p>
+  <p>This site is my personal portfolio of projects in which I use R to create statistical visualizations.</p>
 
-If you'd like to get in touch, email me at {{ site.email }}.
-
-
-> Tip: Edit `about.md` to add more details about yourself (bio, skills, social links, etc.).
+</article>
