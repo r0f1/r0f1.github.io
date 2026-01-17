@@ -1,7 +1,7 @@
 ---
-title: Beeswarm plot + Boxplot
+title: Gentoo Penguins
 image: /dist/project_0007/penguin_weight2.svg
-description: Visualize the difference between two groups of penguins.
+description: Comparing male and female penguins.
 tags: [beeswarm plot, boxplot, t-test]
 ---
  

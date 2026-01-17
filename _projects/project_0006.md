@@ -1,7 +1,7 @@
 ---
-title: Half-violin + Boxplot
+title: Penguin Weights
 image: /dist/project_0006/penguin_weight.svg
-description: How much do penguins weigh?
+description: Comparison of three types of penguins.
 tags: [half-violin plot, boxplot]
 ---
  
