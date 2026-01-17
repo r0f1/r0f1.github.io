@@ -79,7 +79,13 @@ layout: default
     filterButtons.forEach(button => {
       button.addEventListener('click', function() {
         const selectedTag = this.getAttribute('data-tag');
-        filterProjects(selectedTag);
+        
+        // If clicking on the currently active filter, deactivate it (show all)
+        if (this.classList.contains('active') && selectedTag !== 'all') {
+          filterProjects('all');
+        } else {
+          filterProjects(selectedTag);
+        }
       });
     });
 
