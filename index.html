@@ -27,7 +27,7 @@ layout: default
           <p>{{ project.description }}</p>
           <div class="project-tags">
             {% for tag in project.tags %}
-              <span class="tag">{{ tag }}</span>
+              <button class="tag" data-tag="{{ tag }}">{{ tag }}</button>
             {% endfor %}
           </div>
           {% if project.link %}
@@ -44,25 +44,40 @@ layout: default
   document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.tag-filter');
     const projectCards = document.querySelectorAll('.project-card');
+    const tagButtons = document.querySelectorAll('.project-tags .tag');
+
+    function filterProjects(selectedTag) {
+      // Update active button in sidebar
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      const activeButton = Array.from(filterButtons).find(btn => btn.getAttribute('data-tag') === selectedTag);
+      if (activeButton) {
+        activeButton.classList.add('active');
+      }
+
+      // Filter projects
+      projectCards.forEach(card => {
+        const cardTags = card.getAttribute('data-tags').split(',');
+        
+        if (selectedTag === 'all' || cardTags.includes(selectedTag)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
 
     filterButtons.forEach(button => {
       button.addEventListener('click', function() {
         const selectedTag = this.getAttribute('data-tag');
+        filterProjects(selectedTag);
+      });
+    });
 
-        // Update active button
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
-
-        // Filter projects
-        projectCards.forEach(card => {
-          const cardTags = card.getAttribute('data-tags').split(',');
-          
-          if (selectedTag === 'all' || cardTags.includes(selectedTag)) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
-        });
+    tagButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        const selectedTag = this.getAttribute('data-tag');
+        filterProjects(selectedTag);
       });
     });
   });
