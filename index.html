@@ -45,6 +45,7 @@ layout: default
     const filterButtons = document.querySelectorAll('.tag-filter');
     const projectCards = document.querySelectorAll('.project-card');
     const tagButtons = document.querySelectorAll('.project-tags .tag');
+    const allProjectsButton = document.querySelector('[data-tag="all"]');
 
     function filterProjects(selectedTag) {
       // Update active button in sidebar
@@ -52,6 +53,15 @@ layout: default
       const activeButton = Array.from(filterButtons).find(btn => btn.getAttribute('data-tag') === selectedTag);
       if (activeButton) {
         activeButton.classList.add('active');
+      }
+
+      // Make "All Projects" bold and black when a filter is active
+      if (selectedTag !== 'all') {
+        allProjectsButton.style.fontWeight = 'bold';
+        allProjectsButton.style.color = '#000';
+      } else {
+        allProjectsButton.style.fontWeight = 'normal';
+        allProjectsButton.style.color = '#999';
       }
 
       // Filter projects
