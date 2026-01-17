@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, system-ui, -apple-system, sans-serif;
   line-height: 1.6;
@@ -225,7 +223,6 @@ header.site-header .container {
 
 .project-info h3 {
   margin-bottom: 0.5rem;
-  font-family: 'Merriweather', serif;
   font-weight: 700;
 }
 
