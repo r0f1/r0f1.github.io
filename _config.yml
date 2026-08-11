@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Florian Rohrer
+title: Florian Gavilanes
 email: "semicolonator@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
   Personal portfolio for statistical visualizations.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://r0f1.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  r0f1
-linkedin_username: florian-rohrer-a48200123
+linkedin_username: florian-gavilanes-a48200123
 
 # Build settings
 markdown: kramdown
