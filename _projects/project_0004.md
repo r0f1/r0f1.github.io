@@ -6,5 +6,3 @@ tags: [scatterplot, tidytuesday]
 ---
 
 TidyTuesday Week 48, 2025
- 
-Code: [https://github.com/r0f1/r_visualizations/tree/main/projects/project_0004](https://github.com/r0f1/r_visualizations/tree/main/projects/project_0004)

@@ -6,5 +6,3 @@ tags: [beeswarm plot, tidytuesday]
 ---
 
 TidyTuesday Week 49, 2025
-
-Code: [https://github.com/r0f1/r_visualizations/tree/main/projects/project_0015](https://github.com/r0f1/r_visualizations/tree/main/projects/project_0015)
